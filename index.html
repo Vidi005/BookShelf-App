@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><img src="assets/images/book.svg" alt="Bookshelf Image"></li>
+            <li><h2>Bookshelf App</h2></li>
+        </ul>
+        <div id="scroll-to-top-btn">
+            <h4><a href="#top">^</a></h4>
+        </div>
+    </header>
+    <main>
+        <div class="first-contents">
+            <section class="input-section">
+                <h3>Masukkan Buku Baru</h3>
+                <form id="form-book-input">
+                    <div class="form-input">
+                        <label for="book-title">Judul Buku</label><br>
+                        <input id="book-title" type="text" placeholder="Masukkan Judul Buku" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="book-author">Penulis</label><br>
+                        <input id="book-author" type="text" placeholder="Masukkan Penulis Buku" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="book-year">Tahun</label><br>
+                        <input id="book-year" type="number" placeholder="Masukkan Tahun Buku" required>
+                    </div>
+                    <div class="form-checkbox">
+                        <input id="book-is-read" type="checkbox" name="book-is-read">
+                        <label for="book-is-read">Selesai dibaca</label>
+                    </div>
+                    <div class="form-submit">
+                        <input id="submit-btn" type="submit" value="Masukkan Buku ke dalam Rak">
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="second-contents">
+            <section class="search-section">
+                <h3>Cari Judul Buku</h3>
+                <form id="form-search-book">
+                    <div class="search-content">
+                        <input id="search-book-title" type="search" placeholder="Cari Buku...">
+                        <button id="search-btn" type="submit"><img src="assets/images/search.svg" alt="Cari"></button>
+                    </div>
+                    <div>
+                        <p id="item-info">Cari buku yang ada di dalam rak</p>
+                        <div id="filtered-books"></div>
+                    </div>
+                </form>
+            </section>
+            <section class="book-list">
+                <article class="unread-book-list">
+                    <h3><span class="book-list-title">Belum Selesai dibaca</span><span class="expand"><img src="assets/images/expand.svg" id="unread-drop-down"></span></h3>
+                    <div class="book-item" id="unread-books" hidden>
+                        <p>Kosong</p>
+                    </div>
+                </article>
+                <article class="read-book-list">
+                    <h3><span class="book-list-title">Selesai dibaca</span><span class="expand"><img src="assets/images/expand.svg" id="read-drop-down"></span></h3>
+                    <div class="book-item" id="read-books" hidden>
+                        <p>Kosong</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Submission Bookshelf App Dicoding</p>
+    </footer>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: inline;
+}
+ul {
+    top: 0;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    overflow: hidden;
+    box-shadow: 0 4px 4px 0 rgba(75, 74, 74, 0.4);
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(0, 102, 255, 0.9);
+}
+ul li {
+    display: inline-block;
+}
+ul img {
+    margin-right: 16px;
+    height: 40px;
+    vertical-align: middle;
+}
+#scroll-to-top-btn {
+    display: none;
+}
+#scroll-to-top-btn a {
+    text-decoration: none;
+    padding: 10px 16px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    color: white;
+    font-weight: bolder;
+    background-color: #575757b0;
+    box-shadow: 0 2px 4px 2px rgba(75, 74, 74, 0.4);
+    border-radius: 6px;
+}
+#scroll-to-top-btn a:hover {
+    background-color: #1b00009d;
+}
+main {
+    margin-top: 10px;
+    padding: 20px;
+    overflow: auto;
+}
+main h3 {
+    font-weight: bolder;
+    color: blue;
+    text-align: center;
+    border-bottom: 2px solid blue;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 0;
+}
+.first-contents {
+    position: fixed;
+    float: left;
+    width: 40%;
+}
+.input-section {
+    border: 3px solid blue;
+    border-radius: 16px;
+    box-shadow: 1px 4px 8px 2px rgba(75, 74, 74, 0.4);
+}
+form {
+    padding: 16px;
+}
+.form-input > label {
+    font-weight: bold;
+}
+.form-input > input, #submit-btn {
+    width: 100%;
+    border-radius: 6px;
+    font-size: medium;
+    margin-bottom: 8px;
+    border: 2px solid blue;
+    height: 32px;
+}
+.form-checkbox {
+    text-align: center;
+    margin-bottom: 8px;
+}
+#submit-btn {
+    height: auto;
+    color: white;
+    background-color: blue;
+    padding: 6px 0;
+    box-shadow: 1px 1px 4px 2px rgba(75, 74, 74, 0.4);
+}
+#submit-btn:hover, #search-btn:hover {
+    background-color: darkblue;
+}
+#submit-btn:active, #search-btn:active {
+    background-color: dodgerblue;
+}
+.second-contents {
+    float: right;
+    width: 60%;
+    padding-left: 20px;
+    margin-bottom: 54px;
+}
+.search-section, .book-list {
+    margin-bottom: 20px;
+    border: 3px solid blue;
+    border-radius: 16px;
+    box-shadow: 1px 4px 8px 2px rgba(75, 74, 74, 0.4);
+}
+.search-section {
+    margin-left: 20px;
+    overflow: hidden;
+}
+.search-content {
+    display: flex;
+}
+.search-content input, .search-content button {
+    border-radius: 6px;
+    font-size: medium;
+    margin-bottom: 8px;
+    border: 2px solid blue;
+}
+#search-book-title {
+    margin-right: 10px;
+    height: 32px;
+    flex-grow: 2;
+}
+button img {
+    max-height: 16px;
+    color: white;
+}
+#search-btn {
+    height: auto;
+    flex-grow: 1;
+    color: white;
+    background-color: blue;
+    padding: 4px 0;
+    box-shadow: 1px 1px 4px 2px rgba(75, 74, 74, 0.4);
+}
+#item-info {
+    text-align: center;
+}
+.book-list {
+    overflow: auto;
+    margin-left: 20px;
+    padding-bottom: 16px;
+}
+.unread-book-list h3, .read-book-list h3 {
+    color: white;
+    display: flex;
+    border: none;
+    padding: 0 8px;
+    border-radius: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.unread-book-list h3 {
+    background-color: darkorange;
+}
+.read-book-list h3 {
+    background-color: green;
+}
+.book-list-title {
+    padding-top: 4px;
+}
+.read-btn, .undo-btn, .delete-btn {
+    margin: 4px 4px;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    color: white;
+    box-shadow: 0 2px 4px 2px rgba(75, 74, 74, 0.4);
+}
+.read-btn {
+    background-color: green;
+}
+.undo-btn {
+    background-color: darkorange;
+}
+.delete-btn {
+    margin-left: 16px;
+    background-color: red;
+}
+.read-btn:hover {
+    background-color: darkgreen;
+}
+.read-btn:active {
+    background-color: rgb(64, 170, 64);
+}
+.undo-btn:hover {
+    background-color: orangered;
+}
+.undo-btn:active {
+    background-color: rgb(184, 121, 5);
+}
+.delete-btn:hover {
+    background-color: darkred;
+}
+.delete-btn:active {
+    background-color: rgb(241, 79, 79);
+}
+.expand {
+    flex-grow: 1;
+    text-align: right;
+}
+.expand img {
+    max-height: 24px;
+}
+.book-item {
+    margin: 2px 16px 0 16px;
+}
+.book-item p {
+    margin: 0;
+}
+.inner {
+    margin: 0 2px 4px 2px;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(75, 74, 74, 0.4);
+}
+.inner h4 {
+    margin: 4px 2px;
+}
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    color: aliceblue;
+    background-color: rgba(0, 102, 255, 0.9);
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 4px -4px 3px 1px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1080px) {
+    main {
+        padding: 10px;
+    }
+    .first-contents, .second-contents {
+        padding: 0;
+        position: unset;
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    .search-section, .book-list {
+        margin: 10px auto;
+    }
+}
